@@ -9,6 +9,7 @@ import Address from './Address';
 import Categoriespage from './Categoriespage';
 import Manageaccount from './Manageaccount'; 
 import App6 from './App6';
+import Bag from './Bag';
 function MainApp() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function MainApp() {
         <Route path="/categories" element={<Categoriespage />} />
         <Route path="/manageaccount" element={<Manageaccount />} />
         <Route path="/app6" element={<App6 />}/>
+        <Route path="/bag" element={<Bag />} />
       </Routes>
     </Router>
   );

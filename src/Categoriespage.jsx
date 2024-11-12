@@ -11,15 +11,16 @@ function Categoriespage() {
                 <div className="search-bar">
                     <input type="text" placeholder="Search" />
                     <div className="icons">
-                        <img src='/bag.png' alt="Bag" />
-                        <img 
-                            src='https://www.shutterstock.com/image-vector/icon-notification-logo-design-universal-260nw-1132814402.jpg' 
-                            alt="Notification" 
+                    <img 
+                            src='/bag.png' 
+                            alt="Bag" 
+                            onClick={() => navigate('/bag')} 
+                            style={{ cursor: 'pointer' }} 
                         />
                         <img 
                             src='/account.png' 
                             alt="Account" 
-                            onClick={() => navigate('/app6')} // Navigate to manageaccount
+                            onClick={() => navigate('/app6')} 
                             style={{ cursor: 'pointer' }} 
                         />
                     </div>
