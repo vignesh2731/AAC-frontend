@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './App3one.css';
 
 const App3one = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleCreateClick = () => {
+    navigate('/app4'); // Route to App4 when "CREATE" is clicked
+  };
+
   return (
     <div className="form-container">
       <div className="back-link">← Create a new Account</div>
@@ -26,7 +33,7 @@ const App3one = () => {
           </div>
         </div>
 
-        <button type="submit" className="submit-button">CREATE</button>
+        <button type="button" className="submit-button" onClick={handleCreateClick}>CREATE</button>
 
         <div className="divider">
           <span className="divider-line"></span>

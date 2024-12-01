@@ -1,3 +1,4 @@
+/* Main container for the App2 component */
 .flyshion-container {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@
   margin: 0 auto;
 }
 
+/* Logo container */
 .logo-container {
   margin-bottom: 30px;
 }
@@ -21,6 +23,7 @@
   width: auto;
 }
 
+/* Button container for customer and designer options */
 .button-container {
   display: flex; 
   justify-content: center;
@@ -28,6 +31,7 @@
   margin-bottom: 20px; 
 }
 
+/* Grouping the buttons */
 .button-group {
   display: flex;
   flex-direction: column;
@@ -35,6 +39,7 @@
   gap: 10px;
 }
 
+/* Common button styling */
 .button {
   padding: 10px 20px;
   background-color: #333;
@@ -44,33 +49,44 @@
   border-radius: 5px;
   font-size: 1em;
   width: 150px;
+  transition: background-color 0.3s ease;
 }
 
+/* Main button styling (slightly larger text) */
 .main-button {
   font-size: 1.2em;
   font-weight: bold;
 }
 
+/* Secondary button (Create Account, Login) */
 .secondary-button {
   font-size: 0.9em;
   background-color: #555;
   text-decoration: none;
 }
 
+/* Hover effects for buttons */
 .secondary-button:hover {
   background-color: #777;
 }
 
+.main-button:hover {
+  background-color: #555;
+}
+
+/* Text between buttons (OR) */
 .or-text {
   font-size: 1.2em;
   color: #333;
   margin: 20px 0; 
 }
 
+/* Login button container */
 .login-button-container {
   margin-top: 20px; 
 }
 
+/* Media query for smaller screens (mobile view) */
 @media (max-width: 768px) {
   .button-container {
     flex-direction: column; 

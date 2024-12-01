@@ -18,7 +18,6 @@ const App2 = () => {
           </Link>
         </div>
 
-
         <div className="button-group">
           <button className="button main-button">DESIGNER</button>
           <Link to="/designer/create" className="button secondary-button">
@@ -29,7 +28,6 @@ const App2 = () => {
 
       <span className="or-text">OR</span>
 
-
       <div className="login-button-container">
         <Link to="/login1" className="button secondary-button">Login</Link> 
       </div>
@@ -38,4 +36,3 @@ const App2 = () => {
 };
 
 export default App2;
-  

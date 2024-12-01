@@ -1,10 +1,10 @@
-
 .login-container {
   display: flex;
   gap: 20px;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 100vh;
+  background-color: #f4f7fc;
 }
 
 .login-box {
@@ -13,8 +13,8 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: rgb(100, 94, 94) solid;
-  max-width: 400px; 
-  width: 100%; 
+  max-width: 400px;
+  width: 100%;
 }
 
 .login-box h2 {
@@ -31,21 +31,32 @@
 
 .login-box input {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
 }
 
 .login-box button {
   width: 100%;
-  padding: 10px;
-  background-color: #9da59f;
+  padding: 12px;
+  background-color: #4CAF50;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: white;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.login-box button:hover {
+  background-color: #45a049;
+}
 
+.header-text {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}

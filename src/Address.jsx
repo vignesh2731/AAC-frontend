@@ -4,25 +4,31 @@ import './Address.css';
 function Address() {
   return (
     <>
-      <div className="header-text">
-        <img src="src/assets/back.png" alt="Back" />
-        ADDRESS
-      </div>
-      <div style={{ backgroundColor: 'rgb(254,246,218)', marginBottom: '15px', padding: '15px' }}>
+      <header className="header">
+        <button className="back-button" aria-label="Go Back">
+          <img src="src/assets/back.png" alt="Back" />
+        </button>
+        <h1>Address</h1>
+      </header>
+      <div className="add-address">
         + ADD NEW ADDRESS
       </div>
-      <div className="login-box">
+      <main className="login-box">
         <form>
-          <input type="text" placeholder="Name" required />
-          <input type="text" placeholder="Mobile" required />
-          <input type="text" placeholder="Pincode" required />
-          <input type="text" placeholder="State" required />
-          <textarea placeholder="Address(House No, Building, Street, Area)" required />
-          <textarea placeholder="Locality/town" required />
-          <input type="text" placeholder="City/District" required />
-          <button type="submit"><b>SAVE</b></button>
+          <input type="text" placeholder="Name" aria-label="Name" required />
+          <input type="text" placeholder="Mobile" aria-label="Mobile" required />
+          <input type="text" placeholder="Pincode" aria-label="Pincode" required />
+          <input type="text" placeholder="State" aria-label="State" required />
+          <textarea
+            placeholder="Address (House No, Building, Street, Area)"
+            aria-label="Address"
+            required
+          />
+          <textarea placeholder="Locality/Town" aria-label="Locality" required />
+          <input type="text" placeholder="City/District" aria-label="City" required />
+          <button type="submit"><b>Save</b></button>
         </form>
-      </div>
+      </main>
     </>
   );
 }

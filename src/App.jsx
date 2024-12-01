@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
-        <img src="logo.jpg" alt="Flyshion Logo" className="logo" />
+        <img src="/logo.jpg" alt="Flyshion Logo" className="logo" />
         <button className="login-btn" onClick={handleLoginClick}>Shop Now</button>
       </header>
 
@@ -25,10 +25,10 @@ const App = () => {
           <div className="hero-text">
             <h1>Find Your Own Fashion!</h1>
             <p>Explore our curated collection of stylish clothing tailored to your unique taste.</p>
-            <button className="shop-now-btn" onClick={handleLatestDesignsClick}>Check latest designs</button>
+            <button className="shop-now-btn" onClick={handleLatestDesignsClick}>Check Latest Designs</button>
           </div>
           <div className="hero-image">
-            <img src="i1.avif" alt="Featured" className="featured-img" />
+            <img src="/i.1.avif" alt="Featured Fashion Item" className="featured-img" />
           </div>
         </section>
 
@@ -50,13 +50,13 @@ const App = () => {
           <h2>Most Popular</h2>
           <div className="popular-items">
             <div className="item">
-              <img src="popular1.avif" alt="Popular Item 1" />
+              <img src="/p/opular1.avif" alt="Popular Item1" />
             </div>
             <div className="item">
-              <img src="popular2.avif" alt="Popular Item 2" />
+              <img src="/po/pular2.avif" alt="Popular Item 2" />
             </div>
             <div className="item">
-              <img src="popular3.avif" alt="Popular Item 3" />
+              <img src="/p.opular3.avif" alt="Popular Item 3" />
             </div>
           </div>
         </section>
@@ -66,3 +66,4 @@ const App = () => {
 };
 
 export default App;
+ 

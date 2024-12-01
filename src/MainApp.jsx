@@ -25,6 +25,7 @@ function MainApp() {
         <Route path="/manageaccount" element={<Manageaccount />} />
         <Route path="/app6" element={<App6 />}/>
         <Route path="/bag" element={<Bag />} />
+        <Route path="/app4" element={<App4 />} /> 
       </Routes>
     </Router>
   );

@@ -1,33 +1,33 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; // Add this import
 import './Categoriespage.css';
 
 function Categoriespage() {
-    const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate(); // Initialize the navigate function
 
-    return (
-        <>
-            <div className="container">
-                <div className="search-bar">
-                    <input type="text" placeholder="Search" />
-                    <div className="icons">
-                    <img 
-                            src='/bag.png' 
-                            alt="Bag" 
-                            onClick={() => navigate('/bag')} 
-                            style={{ cursor: 'pointer' }} 
-                        />
-                        <img 
-                            src='/account.png' 
-                            alt="Account" 
-                            onClick={() => navigate('/app6')} 
-                            style={{ cursor: 'pointer' }} 
-                        />
-                    </div>
-                </div>
-                <p>Categories</p>
+  return (
+    <>
+      {/* Top Navbar */}
+      <div className="navbar">
+        <div className="logo"><img src="/logo.ico" alt="logo" /></div>
+        <div className="search-bar">
+          <input type="text" placeholder="Search" />
+          <div className="icons">
+            <img src='./bag.png' alt="Bag" />
+            {/* Modify the onClick to navigate to /bag */}
+            <img 
+              src='/images.png  ' 
+              alt="Notification" 
+              onClick={() => navigate('/bag')} 
+              style={{ cursor: 'pointer' }} 
+            />
+            <img src='./account.png' alt="Account" onClick={() => navigate('/app6')} 
+                            style={{ cursor: 'pointer' }}/>
+          </div>
+        </div>
+      </div>
 
-                <div className="categories">
+      <div className="categories">
                     <div className="category-group">
                         <h3>Women</h3>
                         <div className="category-item western-wear">
@@ -133,9 +133,8 @@ function Categoriespage() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
-    );
+    </>
+  );
 }
 
 export default Categoriespage;
